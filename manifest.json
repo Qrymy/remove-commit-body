@@ -1,0 +1,13 @@
+{
+  "name": "Remove Commit Body",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Remove commit body for GitHub.",
+  "content_scripts": [{
+    "run_at": "document_end",
+    "matches": ["https://github.com/*/*/pull/*"],
+    "js": [
+      "index.js"
+    ]
+  }]
+}
